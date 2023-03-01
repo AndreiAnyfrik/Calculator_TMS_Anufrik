@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Test Suite">
+    <test name="Parameters Test">
+        <classes>
+            <class name="by.teachmeskills.SubtractionTest">
+                <parameter name="a" value="5"/>
+                <parameter name="b" value="4"/>
+                <methods>
+                    <include name="positiveSubtractionTest">
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

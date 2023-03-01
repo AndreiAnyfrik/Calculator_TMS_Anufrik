@@ -1,1 +1,1 @@
-<h1>Project Calculator</h1>
+<h1>Project by.teachmeskills.app.Calculator</h1>
