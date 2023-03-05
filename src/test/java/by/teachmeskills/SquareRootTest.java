@@ -6,7 +6,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class SquareRootTest extends BaseTest {
-    @Test(dataProvider = "invalidValue")
+
+    @Test(dataProvider = "validValue")
     public void positiveSquareRootTest(int a, int expValue) {
         Calculator calculator = new Calculator();
         int result = (int) calculator.squareRoot(a);
@@ -14,10 +15,10 @@ public class SquareRootTest extends BaseTest {
     }
 
     @DataProvider
-    public Object[][] invalidValue() {
+    public Object[][] validValue() {
         return new Object[][]{
                 {4, 2},
-                {0,0}
+                {0, 0}
         };
     }
 

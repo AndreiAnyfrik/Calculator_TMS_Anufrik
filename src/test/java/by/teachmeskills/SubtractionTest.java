@@ -6,6 +6,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class SubtractionTest extends BaseTest {
+
     @Parameters({"a", "b"})
     @Test(groups = "smoke", priority = 0)
     public void positiveValueSubtractionTest(int a, int b) {
@@ -21,7 +22,7 @@ public class SubtractionTest extends BaseTest {
         Assert.assertEquals(result, 4, "Invalid result");
     }
 
-    @Test(groups = "smoke", description = "This test describes Sub straction", priority = 2)
+    @Test(groups = "smoke", description = "This test describes Substraction", priority = 2)
     public void nullValueSubtractionTest() {
         Calculator calculator = new Calculator();
         int result = calculator.subtraction(3, 0);

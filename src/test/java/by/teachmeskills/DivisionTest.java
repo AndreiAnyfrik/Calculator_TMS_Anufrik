@@ -6,6 +6,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class DivisionTest extends BaseTest {
+
     @Test(dataProvider = "division")
     public void positiveDivision(int a, int b, int expValue) {
         Calculator calculator = new Calculator();
@@ -18,7 +19,7 @@ public class DivisionTest extends BaseTest {
         return new Object[][]{
                 {0, 3, 0},
                 {10, 2, 5},
-                {-8,2,-4}
+                {-8, 2, -4}
         };
     }
 
